@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Yad-studio.github.io</title>
+    <title>Yad Studio - Markov algorithms IDE and interpreter</title>
   </head>
 
   <body>
@@ -17,8 +17,9 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/Yad-Studio">View on GitHub</a>
+		  <a id="forkme_banner2" href="https://github.com/Yad-Studio">View on GitHub2</a>
 
-          <h1 id="project_title">Yad-studio.github.io</h1>
+          <h1 id="project_title">Yad Studio - Markov algorithms IDE and interpreter</h1>
           <h2 id="project_tagline"></h2>
 
         </header>
@@ -28,43 +29,82 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Yad Studio is an easy IDE for <strong>Markov Algorithms</strong> interpretation.
+ Read more about <a href="http://en.wikipedia.org/wiki/Markov_algorithm" target="_blank">Markov Algorithms</a>
+</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<h3>
+<a name="tutorial" class="anchor" href="#tutorial"><span class="octicon octicon-link"></span></a>Tutorial</h3>
+
+<p>Create firstly the Alphabeth <code>T = {...}</code>.
+ Than create rules (in one row write only a one rule). Use<code>-></code> and <code>->.</code> This symbol <code>->.</code> 
+ creates terminated rules(if the algorythm use this rule - the program will be stoped)
+ There is an example:</p>
+<pre><code>T = {a,b,c,d}
+aa->a
+bbb->.c
 </code></pre>
+<p><strong>Input</strong> word: <code>bbbaaa</code> Set it in right palen in the <strong>Input Word box.</strong>
+Click <strong>Run</strong> button (at the right panel).
+<strong>Output</strong>: <code>ca</code> Output will be saved in the <strong>Input history</strong>.<br><br>
+If you'd like to <code>//add a comment write like this</code>
+</p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h5>
+<a name="run-debug" class="anchor" href="#run-debug"><span class="octicon octicon-link"></span></a>Run with Debug</h5>
+<p>If you'd like to see the changin in the input string step by step set input word in <strong>Input Word box</strong> and
+click on the <strong>Run with Debug</strong> button.<br><br>
+Also you can put <strong>break points</strong> to the rules (click befor the line number) and than <strong>Run with Debug</strong>
+The program will stoped when it will be reached the first <strong>break point</strong>. Than you can use <strong>Next Step</strong>
+(see the next rule, which will be used) or <strong>Continue</strong> (stoped, when the algorithm reach this rule next time).
+</p>
+
+<h5>
+<a name="input-history" class="anchor" href="#input-history"><span class="octicon octicon-link"></span></a>Input History</h5>
+<p>Input history saves all your previous input strings during all the sesions.
+If you'd like to <strong>add</strong> a line to the history, set string to <strong>Input Word box</strong>
+and then <strong>Run</strong> or <strong>Run with Debug</strong> the program.<br><br>
+
+Use the previous input by double click and it will be setted in the <strong>Intput Word box</strong>.<br><br>
+
+If you'd like to <strong>delete</strong> a line from the history use right click on activated row in the history and select
+<strong>Delete</strong> in the context menu. Also you can activate row in the <strong>Input history</strong> and click on '-' button.
+</p>
+
+
+<h5>
+<a name="unactive-run" class="anchor" href="#unactive-run"><span class="octicon octicon-link"></span></a>Unactive Run Button</h5>
+<p>If there is a mistake in the code <strong>Run</strong> and <strong>Run with Debug</strong> will not be active.
+The line(or lines) with the mistake will be matched in red color. For example if you use symbols which are not 
+from the alphabeth lines become red.
+</p>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h3>
+<p>
+</p>
 
 <h3>
 <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p>The project was created in the National University "Kyiv-Mohyla Academy"(Ukraine), as a part of study project by Andrii Chaika (<a href="https://github.com/seagullua" class="user-mention">@seagullua</a>), Diana Sirenko (<a href="https://github.com/dianasi" class="user-mention">@dianasi</a>), and Yura Grischenko (<a href="https://github.com/yuragri" class="user-mention">@yuragri</a>).</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
 <h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support and Contact</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<!--Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a>-->
+<p>Having trouble with Yad Studio? Contact <a href="mailto:yad.studio.pro@gmail.com">yad.studio.pro@gmail.com</a> and we’ll help you to solve your problems.</p>
       </section>
     </div>
 
     <!-- FOOTER  -->
+	<!-- <a href="http://pages.github.com"> -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        <p>Yad Studio - Markov algorithms IDE and interpreter © 2014</a></p>
       </footer>
     </div>
 
