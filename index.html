@@ -16,8 +16,8 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Yad-Studio">View on GitHub</a>
-		  <a id="forkme_banner2" href="https://github.com/Yad-Studio">View on GitHub2</a>
+          <a id="forkme_banner" href="https://github.com/Yad-Studio">setup.exe(7Mb)</a>
+		  <a id="forkme_banner2" href="https://github.com/Yad-Studio">portable.zip(5Mb)</a>
 
           <h1 id="project_title">Yad Studio - Markov algorithms IDE and interpreter</h1>
           <h2 id="project_tagline"></h2>
@@ -53,8 +53,8 @@ If you'd like to <code>//add a comment write like this</code>
 </p>
 
 
-<h5>
-<a name="run-debug" class="anchor" href="#run-debug"><span class="octicon octicon-link"></span></a>Run with Debug</h5>
+<h4>
+<a name="run-debug" class="anchor" href="#run-debug"><span class="octicon octicon-link"></span></a>Run with Debug</h4>
 <p>If you'd like to see the changin in the input string step by step set input word in <strong>Input Word box</strong> and
 click on the <strong>Run with Debug</strong> button.<br><br>
 Also you can put <strong>break points</strong> to the rules (click befor the line number) and than <strong>Run with Debug</strong>
@@ -62,8 +62,8 @@ The program will stoped when it will be reached the first <strong>break point</s
 (see the next rule, which will be used) or <strong>Continue</strong> (stoped, when the algorithm reach this rule next time).
 </p>
 
-<h5>
-<a name="input-history" class="anchor" href="#input-history"><span class="octicon octicon-link"></span></a>Input History</h5>
+<h4>
+<a name="input-history" class="anchor" href="#input-history"><span class="octicon octicon-link"></span></a>Input History</h4>
 <p>Input history saves all your previous input strings during all the sesions.
 If you'd like to <strong>add</strong> a line to the history, set string to <strong>Input Word box</strong>
 and then <strong>Run</strong> or <strong>Run with Debug</strong> the program.<br><br>
@@ -75,17 +75,40 @@ If you'd like to <strong>delete</strong> a line from the history use right click
 </p>
 
 
-<h5>
-<a name="unactive-run" class="anchor" href="#unactive-run"><span class="octicon octicon-link"></span></a>Unactive Run Button</h5>
+<h4>
+<a name="unactive-run" class="anchor" href="#unactive-run"><span class="octicon octicon-link"></span></a>Unactive Run Button</h4>
 <p>If there is a mistake in the code <strong>Run</strong> and <strong>Run with Debug</strong> will not be active.
 The line(or lines) with the mistake will be matched in red color. For example if you use symbols which are not 
 from the alphabeth lines become red.
 </p>
 
+<h4>
+<a name="forbidden-characters" class="anchor" href="#forbidden-characters"><span class="octicon octicon-link"></span></a>Illegal Characters</h4>
+<p>It is <strong>forbidden</strong> to use in the  Alphabeth to use <strong>empty char,-,>, point, comma, T</strong>
+(used for Alphabeth initialisation)
+</p>
+
 <h3>
 <a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h3>
-<p>
-</p>
+<p>Example 1:<br>Input: <strong>dogs_and_cats_are_friends</strong><br>Output: <strong>a_dog_and_a_cat_is_enemies</strong></p>
+<pre><code>//dogs_and_cats_are_friends
+T = {d,o,g,s,c,a,t,r,e,i,f,n,m,_}
+
+dogs->a_dog
+cats->a_cat
+are->is
+friends->enemies
+</code>
+</pre>
+
+<p>Example 2:<br>Input: <strong>AngelineJolie</strong><br>Output: <strong>JamesHaven!</strong></p>
+<pre><code>//convert Angeline Jolie to James Haven(her brother)
+T = {A,n,g,e,l,i,J,o,a,m,s,H,v,!}
+
+Angeline->James
+Jolie->Haven!
+</code>
+</pre>
 
 <h3>
 <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
