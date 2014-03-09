@@ -1,0 +1,1 @@
+window.open ('http://yad-studio.github.io/#tutorial','_self',false)
