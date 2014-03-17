@@ -16,10 +16,11 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Yad-Studio">setup.exe(7Mb)</a>
-		  <a id="forkme_banner2" href="https://github.com/Yad-Studio">portable.zip(5Mb)</a>
-
-          <h1 id="project_title">Yad Studio - Markov algorithms IDE and interpreter</h1>
+          <a class="forkme_banner first" href="https://github.com/Yad-Studio/YAD-Studio/releases/download/v1.01/Yad.Studio.1.0.Setup.msi">Yad Studio <span>Setup.msi 5 MB</span></a>
+		  <a class="forkme_banner second" href="https://github.com/Yad-Studio/YAD-Studio/releases/download/v1.01/Yad.Studio.1.0.Portable.zip">Yad Studio <span>Portable.zip 5 MB</span></a>
+		   <a class="forkme_banner third" href="https://github.com/Yad-Studio/YAD-Studio/">Yad Studio <span>Source Code</span></a>
+		  
+          <img src="images/logo.png"  style="float:left; margin-right:20px;"><h1 id="project_title">Yad Studio <span>Markov algorithms IDE and interpreter</span></h1>
           <h2 id="project_tagline"></h2>
 
         </header>
@@ -28,47 +29,56 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+	  <img src="images/s2.png" >
         <h3>
 <a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h3>
 
 <p>Yad Studio is an easy IDE for <strong>Markov Algorithms</strong> interpretation.
  Read more about <a href="http://en.wikipedia.org/wiki/Markov_algorithm" target="_blank">Markov Algorithms</a>
-</p>
+	
+ </p>
 
 <h3>
 <a name="tutorial" class="anchor" href="#tutorial"><span class="octicon octicon-link"></span></a>Tutorial</h3>
 
-<p>Create firstly the Alphabeth <code>T = {...}</code>.
- Than create rules (in one row write only a one rule). Use<code>-></code> and <code>->.</code> This symbol <code>->.</code> 
- creates terminated rules(if the algorythm use this rule - the program will be stoped)
+<p>Firstly, Define the Alphabeth <code>T = {...}</code> - the symbols which can be used in rules and Input Alphabet <code>I = {...}</code> - the symbols which can be used as input. 
+Please note that the alphabet definition is optional. If you do not define it then all symbols except system ones can be used in rules and input. </p>
+ 
+<p> Than create rules (one rule in one row). You can use<code>-></code> and <code>->.</code>. The symbol <code>->.</code> 
+ creates terminated rules(if the algorythm use this rule - the program will be stoped). Please note that if no rules fits the input then the program will be finished.
  There is an example:</p>
 <pre><code>T = {a,b,c,d}
 aa->a
 bbb->.c
 </code></pre>
-<p><strong>Input</strong> word: <code>bbbaaa</code> Set it in right palen in the <strong>Input Word box.</strong>
+<p><strong>Input</strong> word: <code>bbbaaa</code> Set it in right panel in the <strong>Input Word box.</strong>
 Click <strong>Run</strong> button (at the right panel).
-<strong>Output</strong>: <code>ca</code> Output will be saved in the <strong>Input history</strong>.<br><br>
+<strong>Output</strong>: <code>ca</code> Output will be saved in the <strong>Input history</strong>.
+<img src="images/s1.png" >
+
+<br><br>
 If you'd like to <code>//add a comment write like this</code>
 </p>
 
 
 <h4>
 <a name="run-debug" class="anchor" href="#run-debug"><span class="octicon octicon-link"></span></a>Run with Debug</h4>
-<p>If you'd like to see the changin in the input string step by step set input word in <strong>Input Word box</strong> and
-click on the <strong>Run with Debug</strong> button.<br><br>
-Also you can put <strong>break points</strong> to the rules (click befor the line number) and than <strong>Run with Debug</strong>
-The program will stoped when it will be reached the first <strong>break point</strong>. Than you can use <strong>Next Step</strong>
-(see the next rule, which will be used) or <strong>Continue</strong> (stoped, when the algorithm reach this rule next time).
+<p>If you'd like to see how you program is executed you can run it in Debug mode. You can use Debug button (Shift+F5) and you will be able to see the debug run log. </p>
+<img src="images/s3.png" >
+<p>
+Also you can put <strong>break points</strong> to the rules (click on the line number) and than when you use Debug Run
+the program will stop when it reached the <strong>break point</strong>. Than you can use <strong>Next Step</strong> (F10)
+(program will stop on the next rule) or <strong>Continue</strong> (program will stop when the algorithm reaches the next break point).
 </p>
+<p>You can also run program with Step By Step button (F10) which will pause execution on the first rule and then you will be able to press F10 and execute program step by step.</p>
 
 <h4>
 <a name="input-history" class="anchor" href="#input-history"><span class="octicon octicon-link"></span></a>Input History</h4>
-<p>Input history saves all your previous input strings during all the sesions.
+<p>Input history saves all your previous input strings during all the sessions.
 If you'd like to <strong>add</strong> a line to the history, set string to <strong>Input Word box</strong>
 and then <strong>Run</strong> or <strong>Run with Debug</strong> the program.<br><br>
 
-Use the previous input by double click and it will be setted in the <strong>Intput Word box</strong>.<br><br>
+Use the previous input by double click and it will be setted in the <strong>Input Word box</strong>.<br><br>
 
 If you'd like to <strong>delete</strong> a line from the history use right click on activated row in the history and select
 <strong>Delete</strong> in the context menu. Also you can activate row in the <strong>Input history</strong> and click on '-' button.
@@ -108,8 +118,10 @@ T = {A,n,g,e,l,i,J,o,a,m,s,H,v,!}
 Angeline->James
 Jolie->Haven!
 </code>
-</pre>
 
+
+</pre>
+<p>You can find more examples in Examples folder which is the part of distribution</p>
 <h3>
 <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 <p>The project was created in the National University "Kyiv-Mohyla Academy"(Ukraine), as a part of study project by Andrii Chaika (<a href="https://github.com/seagullua" class="user-mention">@seagullua</a>), Diana Sirenko (<a href="https://github.com/dianasi" class="user-mention">@dianasi</a>), and Yura Grischenko (<a href="https://github.com/yuragri" class="user-mention">@yuragri</a>).</p>

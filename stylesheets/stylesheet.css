@@ -133,7 +133,7 @@ strong {
   font-weight: bold;
 }
 
-img {
+/*img {
   position: relative;
   margin: 0 auto;
   max-width: 739px;
@@ -146,7 +146,7 @@ img {
   -moz-box-shadow: 0 0 5px #ebebeb;
   -o-box-shadow: 0 0 5px #ebebeb;
   -ms-box-shadow: 0 0 5px #ebebeb;
-}
+}*/
 
 p img {
   display: inline;
@@ -269,7 +269,7 @@ Full-Width Styles
   margin: 0 auto;
 }
 
-#forkme_banner {
+.forkme_banner {
   display: block;
   position: absolute;
   top:0;
@@ -284,20 +284,25 @@ Full-Width Styles
   border-bottom-right-radius: 2px;
 }
 
-#forkme_banner2 {
-  display: block;
-  position: absolute;
-  top:0;
-  right: 250px;
-  z-index: 10;
-  padding: 10px 50px 10px 10px;
-  color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
-  font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+.forkme_banner span{
+	display:block;
+	font-size:10px;
+	font-weight: normal;
+	line-height:8px;
 }
+
+.forkme_banner.second {
+	right: 200px;
+
+	background: url('../images/icon_download.png') #00c305 no-repeat 95% 50%;
+}
+
+.forkme_banner.first {
+	right: 390px;
+	background: url('../images/icon_download.png') #00c305 no-repeat 95% 50%;
+}
+
+
 
 #header_wrap {
   background: #212121;
@@ -309,7 +314,7 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding: 50px 10px 10px 10px;
 }
 
 #project_title {
@@ -436,3 +441,18 @@ Small Device Styles
   }
 
 }
+
+#project_title span
+{
+	display: block;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#project_title
+{
+	line-height: 30px;
+	padding-top: 50px;
+}
+
+img {max-width: 100%;}
