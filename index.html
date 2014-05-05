@@ -94,9 +94,21 @@ from the alphabeth lines become red.
 
 <h4>
 <a name="forbidden-characters" class="anchor" href="#forbidden-characters"><span class="octicon octicon-link"></span></a>Illegal Characters</h4>
-<p>It is <strong>forbidden</strong> to use in the  Alphabeth to use <strong>empty char,-,>, point, comma, T</strong>
+<p>It is <strong>forbidden</strong> to use in the  Alphabeth to use empty char and symbols: <code>-</code>,<code>></code>, <code>.</code>, <code>,</code>, <code>T</code>, <code>I</code>
 (used for Alphabeth initialisation)
 </p>
+
+<h4>
+<a name="empty-char" class="anchor" href="#empty-char"><span class="octicon octicon-link"></span></a>Empty character</h4>
+<p>There is also a special character <code>$</code> which represents empty symbol. For example rule <code>0 -> $</code> will erase <code>0</code>. And rule <code>$ -> a</code> will append <code>a</code> to the beginning of the word.</p>
+<p>The next code transforms binary written number into unary written
+<pre>
+|0 -> 0||
+1->0|
+0->$
+</pre>
+</p>
+
 
 <h3>
 <a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h3>
