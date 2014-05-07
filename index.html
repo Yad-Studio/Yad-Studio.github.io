@@ -41,12 +41,12 @@
 <h3>
 <a name="tutorial" class="anchor" href="#tutorial"><span class="octicon octicon-link"></span></a>Tutorial</h3>
 
-<p>Firstly, Define the Alphabeth <code>T = {...}</code> - the symbols which can be used in rules and Input Alphabet <code>I = {...}</code> - the symbols which can be used as input. 
+<p>Firstly, define the Alphabeth <code>T = {...}</code> (the symbols which can be used in rules) and Input Alphabet <code>I = {...}</code> (the symbols which can be used as input). 
 Please note that the alphabet definition is optional. If you do not define it then all symbols except system ones can be used in rules and input. </p>
  
-<p> Than create rules (one rule in one row). You can use<code>-></code> and <code>->.</code>. The symbol <code>->.</code> 
- creates terminated rules(if the algorythm use this rule - the program will be stoped). Please note that if no rules fits the input then the program will be finished.
- There is an example:</p>
+<p> Then create rules (one rule per row). You can use<code>-></code> and <code>->.</code>. The symbol <code>->.</code> 
+ creates terminated rules (if the algorithm use this rule - the program will be stoped). Please note that if no rule fits the input then the program will be finished.
+ Here is an example:</p>
 <pre><code>T = {a,b,c,d}
 aa->a
 bbb->.c
@@ -74,7 +74,7 @@ the program will stop when it reached the <strong>break point</strong>. Than you
 
 <h4>
 <a name="input-history" class="anchor" href="#input-history"><span class="octicon octicon-link"></span></a>Input History</h4>
-<p>Input history saves all your previous input strings during all the sessions.
+<p>Input history saves all your previous input strings during all sessions.
 If you'd like to <strong>add</strong> a line to the history, set string to <strong>Input Word box</strong>
 and then <strong>Run</strong> or <strong>Run with Debug</strong> the program.<br><br>
 
@@ -86,16 +86,16 @@ If you'd like to <strong>delete</strong> a line from the history use right click
 
 
 <h4>
-<a name="unactive-run" class="anchor" href="#unactive-run"><span class="octicon octicon-link"></span></a>Unactive Run Button</h4>
+<a name="inactive-run" class="anchor" href="#unactive-run"><span class="octicon octicon-link"></span></a>Inactive Run Button</h4>
 <p>If there is a mistake in the code <strong>Run</strong> and <strong>Run with Debug</strong> will not be active.
-The line(or lines) with the mistake will be matched in red color. For example if you use symbols which are not 
+The line (or lines) with the mistake will be matched in red color. For example if you use symbols which are not 
 from the alphabeth lines become red.
 </p>
 
 <h4>
 <a name="forbidden-characters" class="anchor" href="#forbidden-characters"><span class="octicon octicon-link"></span></a>Illegal Characters</h4>
-<p>It is <strong>forbidden</strong> to use in the  Alphabeth to use empty char and symbols: <code>-</code>,<code>></code>, <code>.</code>, <code>,</code>, <code>T</code>, <code>I</code>
-(used for Alphabeth initialisation)
+<p>It is <strong>forbidden</strong> to use in the Alphabeth empty chars and symbols: <code>-</code>,<code>></code>, <code>.</code>, <code>,</code>, <code>T</code>, <code>I</code>
+(used for Alphabeth initialisation).
 </p>
 
 <h4>
